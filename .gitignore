@@ -1,0 +1,13 @@
+
+*.suo
+*.user
+/Scalejs.Application.MVVM/obj
+/Scalejs.Extension/obj
+/Scalejs.Module.MVVM/obj
+/Scalejs.VS2010/obj
+/Scalejs.VS2012/obj
+/Scalejs.Application.MVVM/bin
+/Scalejs.Extension/bin
+/Scalejs.Module.MVVM/bin
+/Scalejs.VS2010/bin
+/Scalejs.VS2012/bin
