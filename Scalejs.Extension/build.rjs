@@ -1,7 +1,5 @@
 ﻿({
-    paths: {
-		'scalejs' : 'Scripts/scalejs-1.0.83'
-    },
+	mainConfigFile: '../tests/all.tests.js',
     include: '$projectname$',
     exclude: [
         'scalejs!core'

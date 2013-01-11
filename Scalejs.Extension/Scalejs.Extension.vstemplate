@@ -17,10 +17,12 @@
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\build.rjs">build.rjs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\$projectname$.nuspec">scalejs.extension.nuspec</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.js">scalejs.extension.js</ProjectItem>
-      <ProjectItem ReplaceParameters="true">$projectname$\part1.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="js\$projectname$.js">scalejs.extension.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">js\$projectname$\part1.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">tools\install.ps1</ProjectItem>
       <ProjectItem ReplaceParameters="true">tools\uninstall.ps1</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tests\$projectname$.test.js">scalejs.extension.test.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">tests\all.tests.js</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>
@@ -29,7 +31,9 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
-      <package id="scalejs" version="0.1.0" />
+      <package id="scalejs" version="0.1.3" />
+      <package id="require-js" version="2.0.4" />
+      <package id="jasmine-js" version="1.3.1" />
     </packages>
   </WizardData>
 </VSTemplate>

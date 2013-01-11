@@ -1,6 +1,6 @@
-﻿/*global require*/
+/*global require*/
 require({
-    baseUrl: '.',
-    paths: {
+    "baseUrl":  ".",
+    "paths":  {
     }
 }, ['app/app']);

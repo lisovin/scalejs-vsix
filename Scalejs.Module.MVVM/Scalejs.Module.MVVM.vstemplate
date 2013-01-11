@@ -13,6 +13,6 @@
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\bindings\$fileinputname$Bindings.js">module\bindings\view1Bindings.js</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\viewmodels\$fileinputname$ViewModel.js">module\viewmodels\view1ViewModel.js</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\views\$fileinputname$.html">module\views\view1.html</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$.js">module\module.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$Module.js">module\module.js</ProjectItem>
   </TemplateContent>
 </VSTemplate>

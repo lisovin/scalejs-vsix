@@ -43,6 +43,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <JSLintSkip>\Scripts\</JSLintSkip>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,6 +72,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="scalejs.extension.nuspec" />
     <None Include="ProjectTemplate.csproj">
       <SubType>Designer</SubType>
@@ -108,11 +110,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="scalejs.extension.js" />
-    <Content Include="%24projectname%24\part1.js" />
+    <None Include="scalejs.extension.js" />
+    <None Include="js\%24projectname%24\part1.js" />
+    <None Include="tests\all.tests.js" />
+    <None Include="scalejs.extension.test.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jasmine.js" />
+    <Content Include="Scripts\require.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

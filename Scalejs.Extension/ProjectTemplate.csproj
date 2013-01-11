@@ -9,12 +9,15 @@
   <ItemGroup>
     <Content Include="Properties\build.rjs"/>
     <Content Include="Properties\$projectname$.nuspec"/>
-    <Content Include="$projectname$.js"/>
-    <Content Include="$projectname$\part1.js"/>
+    <Content Include="js\$projectname$.js"/>
+    <Content Include="js\$projectname$\part1.js"/>
     <Content Include="tools\install.ps1"/>
     <Content Include="tools\uninstall.ps1"/>
+    <Content Include="tests\all.tests.js"/>
+    <Content Include="tests\$projectname$.test.js"/>
   </ItemGroup>
   <PropertyGroup>
     <ScalejsExtension>True</ScalejsExtension>
+    <ScalejsBaseUrl>js</ScalejsBaseUrl>
   </PropertyGroup>
 </Project>

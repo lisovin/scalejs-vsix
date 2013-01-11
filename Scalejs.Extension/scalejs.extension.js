@@ -1,6 +1,6 @@
 /*global define*/
 define([
-    '$projectname$/part1'
+    './$projectname$/part1'
 ], function (
     part1
 ) {

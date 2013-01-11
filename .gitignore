@@ -11,3 +11,6 @@
 /Scalejs.Module.MVVM/bin
 /Scalejs.VS2010/bin
 /Scalejs.VS2012/bin
+/packages
+/TestResults
+/.nuget/nuget.exe
