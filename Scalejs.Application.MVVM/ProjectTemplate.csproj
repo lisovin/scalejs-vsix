@@ -24,8 +24,11 @@
     <Content Include="app\main\viewmodels\mainViewModel.js"/>
     <Content Include="app\main\views\main.html"/>
     <Content Include="app\main\mainModule.js"/>
-    <Content Include="boot\bootstrapper.js"/>
+    <Content Include="bootstrapper.js"/>
     <Content Include="css\global.css"/>
     <Content Include="Properties\build.rjs"/>
 	</ItemGroup>
- </Project>
+  <PropertyGroup>
+    <ScalejsProjectType>Application</ScalejsProjectType>
+  </PropertyGroup>
+</Project>

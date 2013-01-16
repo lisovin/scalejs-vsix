@@ -14,3 +14,8 @@
 /packages
 /TestResults
 /.nuget/nuget.exe
+/Scalejs.Test.VS2012/bin
+/Scalejs.Test.VS2012/obj
+/Scalejs.VS2012/packages.config
+/Scalejs.VS2012/packages/scalejs.0.1.12.nupkg
+/Scalejs.VS2012/packages/scalejs.mvvm.0.1.2.nupkg

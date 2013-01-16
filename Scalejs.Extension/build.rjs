@@ -1,5 +1,5 @@
 ﻿({
-	mainConfigFile: '../tests/all.tests.js',
+	mainConfigFile: '../bootstrapper.js',
     include: '$projectname$',
     exclude: [
         'scalejs!core'

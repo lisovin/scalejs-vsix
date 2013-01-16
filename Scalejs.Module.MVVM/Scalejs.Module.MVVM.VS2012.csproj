@@ -74,9 +74,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scalejs.Module.MVVM.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <VSTemplate Include="Scalejs.Module.MVVM.vstemplate">
       <SubType>Designer</SubType>
     </VSTemplate>
@@ -86,6 +83,7 @@
     <Content Include="module\module.js" />
     <Content Include="module\viewmodels\view1ViewModel.js" />
     <Content Include="module\views\view1.html" />
+    <Content Include="Scalejs.Module.MVVM.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
