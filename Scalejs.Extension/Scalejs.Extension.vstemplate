@@ -30,7 +30,7 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
-      <package id="scalejs" version="0.1.12" />
+      <package id="scalejs" version="0.1.13" />
     </packages>
   </WizardData>
 </VSTemplate>

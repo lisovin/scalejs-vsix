@@ -63,14 +63,14 @@
       <Link>packages\Knockout.Mapping.2.3.4.nupkg</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\scalejs.0.1.12.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="packages\scalejs.mvvm.0.1.2.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="..\..\scalejs.mvvm\packages\knockoutjs.2.2.1\knockoutjs.2.2.1.nupkg">
       <Link>packages\knockoutjs.2.2.1.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\scalejs.0.1.13.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
