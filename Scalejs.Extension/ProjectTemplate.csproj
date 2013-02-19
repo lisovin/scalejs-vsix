@@ -13,7 +13,7 @@
     <Content Include="$projectname$\part1.js"/>
     <Content Include="tools\install.ps1"/>
     <Content Include="tools\uninstall.ps1"/>
-    <Content Include="bootstrapper.js"/>
+    <Content Include="config.js"/>
   </ItemGroup>
   <PropertyGroup>
     <ScalejsProjectType>Extension</ScalejsProjectType>

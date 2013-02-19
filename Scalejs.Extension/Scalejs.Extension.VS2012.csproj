@@ -74,7 +74,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="scalejs.extension.nuspec" />
     <None Include="ProjectTemplate.csproj">
       <SubType>Designer</SubType>
@@ -113,15 +112,13 @@
   <ItemGroup>
     <None Include="scalejs.extension.js" />
     <None Include="%24projectname%24\part1.js" />
-    <None Include="bootstrapper.js" />
+    <None Include="config.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scalejs.Extension.ico" />
-    <Content Include="Scripts\jasmine.js" />
-    <Content Include="Scripts\require.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

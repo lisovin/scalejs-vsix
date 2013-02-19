@@ -12,9 +12,10 @@
     <RootNamespace>scalejs.ajax.test</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="bootstrapper.js"/>
-    <Content Include="tests\all.tests.js"/>
-    <Content Include="tests\$projectname$.js"/>
+    <Content Include="config.js"/>
+    <Content Include="index.test.html"/>
+    <Content Include="test\all.tests.js"/>
+    <Content Include="test\$projectname$.js"/>
   </ItemGroup>
   <PropertyGroup>
     <ScalejsProjectType>Test</ScalejsProjectType>
