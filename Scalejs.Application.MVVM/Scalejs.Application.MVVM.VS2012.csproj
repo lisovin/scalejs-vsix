@@ -67,16 +67,24 @@
     <Content Include="app\main\views\main.html" />
     <Content Include="app\main\mainModule.js" />
     <Content Include="app\main\viewmodels\mainViewModel.js" />
-    <Content Include="bootstrapper.js" />
+    <Content Include="config.js" />
+    <Content Include="css\jasmine.css" />
+    <Content Include="index.test.html" />
     <Content Include="index.release.html" />
     <Content Include="css\global.css" />
     <Content Include="index.html" />
     <Content Include="README.txt" />
     <Content Include="Scalejs.Application.MVVM.ico" />
+    <Content Include="Scripts\es5-shim.js" />
+    <Content Include="Scripts\es5-shim.min.js" />
+    <Content Include="Scripts\jasmine-html.js" />
+    <Content Include="Scripts\jasmine.js" />
     <Content Include="Scripts\knockout-2.2.1.debug.js" />
     <Content Include="Scripts\knockout-2.2.1.js" />
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="test\all.tests.js" />
+    <Content Include="test\mainViewModel.test.js" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

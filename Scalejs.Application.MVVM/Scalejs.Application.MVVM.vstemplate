@@ -17,12 +17,15 @@
       <ProjectItem ReplaceParameters="true">README.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true">index.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">index.release.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.test.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\app.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\bindings\mainBindings.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\viewmodels\mainViewModel.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\views\main.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\mainModule.js</ProjectItem>
-      <ProjectItem ReplaceParameters="true">bootstrapper.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">config.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">test\all.tests.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">test\mainViewModel.test.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">css\global.css</ProjectItem>
       <ProjectItem ReplaceParameters="true">Properties\build.rjs</ProjectItem>
     </Project>
@@ -33,10 +36,13 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
-      <package id="scalejs" version="0.1.13" />
-      <package id="scalejs.mvvm" version="0.1.2" />
+      <package id="scalejs" version="0.2.6" />
+      <package id="scalejs.mvvm" version="0.2.1" />
       <package id="Knockout.Mapping" version="2.3.4"/>
       <package id="knockoutjs" version="2.2.1"/>
+      <package id="jasmine-js" version="1.3.1.1"/>
+      <package id="require-js" version="2.0.4"/>
+      <package id="es5-shim" version="2.0.5"/>
     </packages>
   </WizardData>
 </VSTemplate>

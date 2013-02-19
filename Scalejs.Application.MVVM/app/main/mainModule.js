@@ -13,23 +13,22 @@ define([
     'use strict';
 
     function create(sandbox) {
-        var createView = sandbox.mvvm.createView;
+        var // imports
+            root = sandbox.mvvm.root,
+            renderable = sandbox.mvvm.renderable,
+            registerBindings = sandbox.mvvm.registerBindings,
+            registerTemplates = sandbox.mvvm.registerTemplates,
+            // vars
+            viewModel = mainViewModel(sandbox);
 
-        function start() {
-            var viewModel = mainViewModel(sandbox);
+        // Register module bindings
+        registerBindings(mainBindings);
 
-            createView({
-                dataContext: viewModel,
-                templates: [mainTemplate],
-                bindings: [mainBindings]
-            });
+        // Register module templates
+        registerTemplates(mainTemplate);
 
-            viewModel.text('Hello World!');
-        }
-
-        return {
-            start: start
-        };
+        // Render viewModel using 'main_template' and show it set root view
+        root(renderable('main_template', viewModel));
     }
 
     return module('main', create);

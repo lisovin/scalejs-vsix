@@ -4,7 +4,7 @@ define(function () {
 
     return function (sandbox) {
         var observable = sandbox.mvvm.observable,
-            text = observable();
+            text = observable('Hello World');
 
         return {
             text: text
