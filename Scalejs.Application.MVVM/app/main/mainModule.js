@@ -18,6 +18,9 @@ define([
             renderable = sandbox.mvvm.renderable,
             registerBindings = sandbox.mvvm.registerBindings,
             registerTemplates = sandbox.mvvm.registerTemplates,
+            registerStates = sandbox.state.registerStates,
+            state = sandbox.state.builder.state,
+            onEntry = sandbox.state.builder.onEntry,
             // vars
             viewModel = mainViewModel(sandbox);
 
@@ -27,8 +30,15 @@ define([
         // Register module templates
         registerTemplates(mainTemplate);
 
-        // Render viewModel using 'main_template' and show it set root view
-        root(renderable('main_template', viewModel));
+        // Register application state for the module.
+        registerStates('root',
+            state('app',
+                state('main',
+                    onEntry(function () {
+                        // Render viewModel using 'main-text' binding 
+                        // and show it set root view
+                        root(renderable('main-text', viewModel));
+                    }))));
     }
 
     return module('main', create);

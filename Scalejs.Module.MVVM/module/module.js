@@ -13,23 +13,33 @@ define([
     'use strict';
 
     function create(sandbox) {
-        var createView = sandbox.mvvm.createView;
+        var // imports
+            root = sandbox.mvvm.root,
+            renderable = sandbox.mvvm.renderable,
+            registerBindings = sandbox.mvvm.registerBindings,
+            registerTemplates = sandbox.mvvm.registerTemplates,
+            registerStates = sandbox.state.registerStates,
+            state = sandbox.state.builder.state,
+            onEntry = sandbox.state.builder.onEntry,
+            // vars
+            viewModel = $fileinputname$ViewModel(sandbox);
 
-        function start() {
-            var viewModel = $fileinputname$ViewModel(sandbox);
+        // Register module bindings
+        registerBindings($fileinputname$Bindings);
 
-            createView({
-                dataContext: viewModel,
-                templates: [$fileinputname$Template],
-                bindings: [$fileinputname$Bindings]
-            });
+        // Register module templates
+        registerTemplates($fileinputname$Template);
 
-            viewModel.text('Hello World!');
-        }
-
-        return {
-            start: start
-        };
+        // Register application state for the module.
+        registerStates('root',
+            state('app',
+                state('$fileinputname$',
+                    onEntry(function () {
+                        // Render viewModel using '$fileinputname$-text' binding 
+                        // and show it set root view
+                        viewModel.text('Hello World from $fileinputname$!');
+                        root(renderable('$fileinputname$-text', viewModel));
+                    }))));
     }
 
     return module('$fileinputname$', create);

@@ -71,10 +71,23 @@
       <Link>packages\jasmine-js.1.3.1.1.nupkg</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\scalejs.0.2.6.1.nupkg">
+    <Content Include="packages\scalejs.0.2.7.29.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\scalejs.mvvm.0.2.2.nupkg">
+    <Content Include="packages\scalejs.functional.0.2.9.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\scalejs.mvvm.0.2.3.35.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\scalejs.statechart-scion.0.2.1.30.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="..\packages\json2.1.0.2\json2.1.0.2.nupkg">
+      <Link>packages\json2.1.0.2.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\scalejs.linq-linqjs.3.0.3.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
