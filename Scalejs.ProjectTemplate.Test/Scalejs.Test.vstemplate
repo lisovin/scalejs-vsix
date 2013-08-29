@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Scalejs Test</Name>
+    <Description>Test scalable JavaScript extension or application.</Description>
+    <Icon>Scalejs.Test.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>54df10dc-2f48-421c-9c60-637b28cec527</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>scalejs.my.test</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true">config.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.test.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">test\all.tests.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="test\$projectname$.js">scalejs.test.js</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
+      <package id="es5-shim" version="2.0.5" />
+      <package id="scalejs" version="0.2.6.1" />
+      <package id="require-js" version="2.0.4" />
+      <package id="jasmine-js" version="1.3.1.1" />
+    </packages>
+  </WizardData>
+</VSTemplate>
