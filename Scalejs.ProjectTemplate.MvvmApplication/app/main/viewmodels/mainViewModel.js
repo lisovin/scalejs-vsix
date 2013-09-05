@@ -1,8 +1,12 @@
 ﻿/*global define */
-define(function () {
+define([
+    'scalejs!sandbox/main'
+], function (
+    sandbox
+) {
     'use strict';
 
-    return function (sandbox) {
+    return function () {
         var observable = sandbox.mvvm.observable,
             text = observable('Hello World');
 

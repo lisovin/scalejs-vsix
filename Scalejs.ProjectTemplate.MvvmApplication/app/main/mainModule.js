@@ -1,18 +1,18 @@
 ﻿/*global define */
 define([
-    'scalejs!module',
-    './viewmodels/mainViewModel',
-    'text!./views/main.html',
-    './bindings/mainBindings.js'
+    'scalejs!sandbox/main',
+    'app/main/viewmodels/mainViewModel',
+    'text!app/main/views/main.html',
+    'app/main/bindings/mainBindings.js'
 ], function (
-    module,
+    sandbox,
     mainViewModel,
     mainTemplate,
     mainBindings
 ) {
     'use strict';
 
-    function create(sandbox) {
+    return function main() {
         var // imports
             root = sandbox.mvvm.root,
             renderable = sandbox.mvvm.renderable,
@@ -39,7 +39,5 @@ define([
                         // and show it set root view
                         root(renderable('main-text', viewModel));
                     }))));
-    }
-
-    return module('main', create);
+    };
 });

@@ -17,9 +17,11 @@
 	</PropertyGroup>
 	<ItemGroup>
     <Content Include="README.txt"/>
+    <Content Include="index.debug.html"/>
     <Content Include="index.html"/>
     <Content Include="index.release.html"/>
     <Content Include="index.test.html"/>
+    <Content Include="Scripts\_references.js"/>
     <Content Include="app\app.js"/>
     <Content Include="app\main\bindings\mainBindings.js"/>
     <Content Include="app\main\viewmodels\mainViewModel.js"/>

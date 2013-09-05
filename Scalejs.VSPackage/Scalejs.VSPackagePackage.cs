@@ -69,7 +69,8 @@ namespace PeterLisovin.Scalejs_VSPackage
 
             OnSolutionOpened();
 
-            File.AppendAllText(@"c:\temp\scalejs.out", "Scalejs Initialized! ");
+            WriteLine("Scalejs is initialized");
+
             Debug.WriteLine (string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));
 
             base.Initialize();
@@ -78,14 +79,28 @@ namespace PeterLisovin.Scalejs_VSPackage
 
         #endregion
 
+        private void WriteLine(string message)
+        {
+            var outputWindow = this.dte.ToolWindows.OutputWindow;
+            OutputWindowPane scalejsPane;
+
+            try
+            {
+                scalejsPane = outputWindow.OutputWindowPanes.Item("Scalejs");
+            }
+            catch
+            {
+                scalejsPane = outputWindow.OutputWindowPanes.Add("Scalejs");
+            }
+
+            scalejsPane.OutputString(message + "\n");
+        }
+
         private void OnSolutionOpened()
         {
-            //File.AppendAllText(@"c:\temp\scalejs.out", "Solution opened:  " + dte.Solution.FullName);
-
-            var path = Path.Combine(Path.GetDirectoryName(dte.Solution.FullName), ".scalejs", "Scalejs.psd1");
+            var path = Path.Combine(Path.GetDirectoryName((string)dte.Solution.Properties.Item("Path").Value), ".scalejs", "Scalejs.psd1");
             if (File.Exists(path))
             {
-                //File.AppendAllText(@"c:\temp\scalejs.out", "Scalejs.ps1 exists: " + path);
                 OnScalejsSolutionOpened(path, dte);
             }
         }
@@ -121,18 +136,14 @@ namespace PeterLisovin.Scalejs_VSPackage
                     var r = addCommand(ps).Invoke();
                     foreach (var error in ps.Streams.Error)
                     {
-                        File.AppendAllText(@"c:\temp\errors.out", error.ToString());
+                        WriteLine(error.ToString());
                     }
-/*                    
-                    ps.AddCommand("Import-Module").AddArgument(@"\Dev\Temp\MiniApp\.scalejs\Scalejs.psd1")
-                      .AddStatement().AddCommand(command)
-                      .Invoke();
- */ 
                 }
             }
             catch (Exception ex)
             {
-                File.AppendAllText(@"c:\temp\scalejs.out", Convert.ToString(ex));
+                WriteLine("Failed to run powershell command. Exception:");
+                WriteLine(ex.ToString());
             }
         }
     }

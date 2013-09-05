@@ -15,6 +15,7 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true">README.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.debug.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">index.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">index.release.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">index.test.html</ProjectItem>
@@ -24,6 +25,7 @@
       <ProjectItem ReplaceParameters="true">app\main\views\main.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\mainModule.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">config.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Scripts\_references.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">test\all.tests.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">test\mainViewModel.test.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">css\global.css</ProjectItem>
@@ -36,17 +38,16 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
-      <package id="scalejs" version="0.2.7.29" />
-      <package id="scalejs.mvvm" version="0.2.3.35" />
+      <package id="scalejs" version="0.3.0.0" />
+      <package id="scalejs.mvvm" version="0.3.0.0" />
       <package id="scalejs.functional" version="0.2.9" />
       <package id="scalejs.statechart-scion" version="0.2.1.30" />
       <package id="scalejs.linq-linqjs" version="3.0.3" />
-      <package id="json2" version="1.0.2"/>
-      <package id="Knockout.Mapping" version="2.3.4"/>
-      <package id="knockoutjs" version="2.2.1"/>
+      <package id="knockoutjs" version="2.3.0"/>
+      <package id="Knockout.Mapping" version="2.4.0"/>
       <package id="jasmine-js" version="1.3.1.1"/>
-      <package id="require-js" version="2.0.4"/>
-      <package id="es5-shim" version="2.0.5"/>
+      <package id="almond" version="0.2.6"/>
+      <package id="requirejs" version="2.1.8"/>
     </packages>
   </WizardData>
 </VSTemplate>

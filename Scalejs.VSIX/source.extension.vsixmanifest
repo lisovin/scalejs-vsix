@@ -16,7 +16,7 @@
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:TargetPath="|Scalejs.ProjectTemplate.MvvmApplication;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="Scalejs.VSPackage" Path="|Scalejs.VSPackage;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:TargetPath="|Scalejs.ProjectTemplate.MvvmApplication;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
   </Assets>
 </PackageManifest>
