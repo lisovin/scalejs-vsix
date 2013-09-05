@@ -27,6 +27,7 @@
     <Content Include="app\main\viewmodels\mainViewModel.js"/>
     <Content Include="app\main\views\main.html"/>
     <Content Include="app\main\mainModule.js"/>
+    <Content Include="build\$safeprojectname$.js"/>
     <Content Include="test\all.tests.js"/>
     <Content Include="test\mainViewModel.test.js"/>
     <Content Include="config.js"/>
