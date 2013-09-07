@@ -15,14 +15,14 @@ define([
     return function main() {
         var // imports
             root = sandbox.mvvm.root,
-            renderable = sandbox.mvvm.renderable,
+            template = sandbox.mvvm.template,
             registerBindings = sandbox.mvvm.registerBindings,
             registerTemplates = sandbox.mvvm.registerTemplates,
             registerStates = sandbox.state.registerStates,
             state = sandbox.state.builder.state,
             onEntry = sandbox.state.builder.onEntry,
             // vars
-            viewModel = mainViewModel(sandbox);
+            viewModel = mainViewModel();
 
         // Register module bindings
         registerBindings(mainBindings);
@@ -35,9 +35,9 @@ define([
             state('app',
                 state('main',
                     onEntry(function () {
-                        // Render viewModel using 'main-text' binding 
-                        // and show it set root view
-                        root(renderable('main-text', viewModel));
+                        // Render viewModel using 'main_template' template 
+                        // (defined in main.html) and show it in root region.
+                        root(template('main_template', viewModel));
                     }))));
     };
 });

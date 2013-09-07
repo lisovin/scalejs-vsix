@@ -58,9 +58,6 @@
     <Content Include="packages\scalejs.functional.0.2.9.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\scalejs.statechart-scion.0.2.1.30.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="packages\scalejs.linq-linqjs.3.0.3.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -84,6 +81,9 @@
     </Content>
     <Content Include="..\packages\almond.0.2.6\almond.0.2.6.nupkg">
       <Link>packages\almond.0.2.6.nupkg</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\scalejs.statechart-scion.0.2.1.34.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">

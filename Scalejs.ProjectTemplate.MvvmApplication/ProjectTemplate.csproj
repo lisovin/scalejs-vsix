@@ -4,7 +4,7 @@
 		<ProjectGuid>$guid1$</ProjectGuid>
 		<OutputType>Library</OutputType>
     <OutputPath>build</OutputPath>
-    <JSLintSkip>\Scripts\</JSLintSkip>
+    <JSLintSkip>\Scripts\|\build\</JSLintSkip>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <StartAction>Program</StartAction>
