@@ -7,7 +7,9 @@ define([
     'use strict';
 
     return function () {
-        var observable = sandbox.mvvm.observable,
+        var // imports
+            observable = sandbox.mvvm.observable,
+            // properties
             text = observable('Hello World');
 
         return {

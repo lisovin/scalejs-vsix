@@ -67,7 +67,6 @@
     <Content Include="app\main\views\main.html" />
     <Content Include="app\main\mainModule.js" />
     <Content Include="app\main\viewmodels\mainViewModel.js" />
-    <Content Include="build\%24safeprojectname%24.js" />
     <Content Include="config.js" />
     <Content Include="css\jasmine.css" />
     <Content Include="index.debug.html" />

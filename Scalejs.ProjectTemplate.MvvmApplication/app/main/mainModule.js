@@ -36,7 +36,7 @@ define([
                 state('main',
                     onEntry(function () {
                         // Render viewModel using 'main_template' template 
-                        // (defined in main.html) and show it in root region.
+                        // (defined in main.html) and show it in the `root` region.
                         root(template('main_template', viewModel));
                     }))));
     };

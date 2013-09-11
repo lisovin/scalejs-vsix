@@ -24,7 +24,6 @@
       <ProjectItem ReplaceParameters="true">app\main\viewmodels\mainViewModel.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\views\main.html</ProjectItem>
       <ProjectItem ReplaceParameters="true">app\main\mainModule.js</ProjectItem>
-      <ProjectItem ReplaceParameters="true">build\$safeprojectname$.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">config.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">Scripts\_references.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">test\all.tests.js</ProjectItem>
