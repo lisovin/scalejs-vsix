@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>{CBB3D24D-A50D-45B2-9F11-0907BF96DF42}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <OutputPath>build</OutputPath>
+    <OutputPath>js</OutputPath>
     <JSLintSkip>\Scripts\</JSLintSkip>
   </PropertyGroup>
   <ItemGroup>

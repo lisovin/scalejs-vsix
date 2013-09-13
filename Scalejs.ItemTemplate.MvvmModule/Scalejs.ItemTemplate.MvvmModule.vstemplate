@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   <TemplateData>
     <Name>Scalejs MVVM Module</Name>
-    <DefaultName>main</DefaultName>
+    <DefaultName>module</DefaultName>
     <Description>Scalable JavaScript application MVVM module</Description>
     <Icon>Scalejs.ItemTemplate.MvvmModule.ico</Icon>
     <TemplateID>42a74824-f706-4d91-9655-4e1e0e273431</TemplateID>
@@ -10,9 +10,9 @@
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
   </TemplateData>
   <TemplateContent>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\bindings\$fileinputname$Bindings.js">module\bindings\view1Bindings.js</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\viewmodels\$fileinputname$ViewModel.js">module\viewmodels\view1ViewModel.js</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\views\$fileinputname$.html">module\views\view1.html</ProjectItem>
-    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$Module.js">module\module.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\bindings\$fileinputname$Bindings.js">bindings.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\viewmodels\$fileinputname$ViewModel.js">viewModel.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\views\$fileinputname$.html">view.html</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$Module.js">module.js</ProjectItem>
   </TemplateContent>
 </VSTemplate>

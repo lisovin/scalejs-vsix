@@ -1,21 +1,21 @@
 ﻿/*global define */
 define([
-    'scalejs!module',
-    './viewmodels/$fileinputname$ViewModel',
-    'text!./views/$fileinputname$.html',
-    './bindings/$fileinputname$Bindings.js'
+    'scalejs!sandbox/$fileinputname$',
+    'app/$fileinputname$/viewmodels/$fileinputname$ViewModel',
+    'app/$fileinputname$/bindings/$fileinputname$Bindings.js',
+    'text!app/$fileinputname$/views/$fileinputname$.html'
 ], function (
-    module,
+    sandbox,
     $fileinputname$ViewModel,
-    $fileinputname$Template,
-    $fileinputname$Bindings
+    $fileinputname$Bindings,
+    $fileinputname$Template
 ) {
     'use strict';
 
-    function create(sandbox) {
+    return function $fileinputname$Module() {
         var // imports
             root = sandbox.mvvm.root,
-            renderable = sandbox.mvvm.renderable,
+            template = sandbox.mvvm.template,
             registerBindings = sandbox.mvvm.registerBindings,
             registerTemplates = sandbox.mvvm.registerTemplates,
             registerStates = sandbox.state.registerStates,
@@ -35,12 +35,10 @@ define([
             state('app',
                 state('$fileinputname$',
                     onEntry(function () {
-                        // Render viewModel using '$fileinputname$-text' binding 
-                        // and show it set root view
+                        // Render viewModel using 'main_template' template 
+                        // (defined in main.html) and show it in the `root` region.
                         viewModel.text('Hello World from $fileinputname$!');
-                        root(renderable('$fileinputname$-text', viewModel));
+                        root(template('$fileinputname$_template', viewModel));
                     }))));
-    }
-
-    return module('$fileinputname$', create);
+    };
 });

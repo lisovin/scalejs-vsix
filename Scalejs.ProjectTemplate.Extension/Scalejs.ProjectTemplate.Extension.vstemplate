@@ -11,7 +11,7 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>Scalejs.Extension.ico</Icon>
+    <Icon>Scalejs.ProjectTemplate.Extension.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
@@ -30,8 +30,7 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
-      <package id="es5-shim" version="2.0.5" />
-      <package id="scalejs" version="0.2.6.1" />
+      <package id="scalejs" version="0.3.0.0" />
     </packages>
   </WizardData>
 </VSTemplate>

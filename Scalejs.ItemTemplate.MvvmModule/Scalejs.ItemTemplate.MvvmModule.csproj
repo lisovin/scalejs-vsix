@@ -79,10 +79,10 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="module\bindings\view1Bindings.js" />
-    <Content Include="module\module.js" />
-    <Content Include="module\viewmodels\view1ViewModel.js" />
-    <Content Include="module\views\view1.html" />
+    <Content Include="bindings.js" />
+    <Content Include="module.js" />
+    <Content Include="viewModel.js" />
+    <Content Include="view.html" />
     <Content Include="Scalejs.ItemTemplate.MvvmModule.ico" />
   </ItemGroup>
   <ItemGroup>

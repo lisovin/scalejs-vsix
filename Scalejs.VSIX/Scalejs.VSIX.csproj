@@ -91,6 +91,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Scalejs.ItemTemplate.MvvmModule\Scalejs.ItemTemplate.MvvmModule.csproj">
+      <Project>{1D00823B-90D2-4932-A0A0-29E6CFC18728}</Project>
+      <Name>Scalejs.ItemTemplate.MvvmModule</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\Scalejs.ProjectTemplate.Extension\Scalejs.ProjectTemplate.Extension.csproj">
+      <Project>{cbb3d24d-a50d-45b2-9f11-0907bf96df42}</Project>
+      <Name>Scalejs.ProjectTemplate.Extension</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\Scalejs.ProjectTemplate.MvvmApplication\Scalejs.ProjectTemplate.MvvmApplication.csproj">
       <Project>{D807A884-E479-4531-A637-FA84AC2827E1}</Project>
       <Name>Scalejs.ProjectTemplate.MvvmApplication</Name>

@@ -83,7 +83,7 @@
     <None Include="tools\uninstall.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="Scalejs.Extension.vstemplate">
+    <VSTemplate Include="Scalejs.ProjectTemplate.Extension.vstemplate">
       <SubType>Designer</SubType>
     </VSTemplate>
   </ItemGroup>
@@ -116,9 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scalejs.Extension.ico" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
