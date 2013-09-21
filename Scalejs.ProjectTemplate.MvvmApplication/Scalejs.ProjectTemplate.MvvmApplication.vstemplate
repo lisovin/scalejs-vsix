@@ -37,7 +37,7 @@
     <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
   </WizardExtension>
   <WizardData>
-    <packages repository="extension" repositoryId="Scalejs..2ccf5feb-0ce0-4a3a-aafd-15aeb8a3dda0">
+    <packages repository="extension" repositoryId="Scalejs..b4161afb-19ab-4b0c-9365-63c80c2677b5">
       <package id="scalejs" version="0.3.0.0" />
       <package id="scalejs.mvvm" version="0.3.0.0" />
       <package id="scalejs.functional" version="0.2.9" />
