@@ -16,8 +16,8 @@
     <ProjectGuid>{95982464-60F3-4B99-AC4C-7A3CDF402A2B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Scalejs.Test</RootNamespace>
-    <AssemblyName>Scalejs.Test</AssemblyName>
+    <RootNamespace>Scalejs.ProjectTemplate.Test</RootNamespace>
+    <AssemblyName>Scalejs.ProjectTemplate.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
@@ -60,10 +60,10 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="ProjectTemplate.csproj" />
-    <None Include="Scalejs.Test.ico" />
+    <None Include="Scalejs.ProjectTemplate.Test.ico" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="Scalejs.Test.vstemplate">
+    <VSTemplate Include="Scalejs.ProjectTemplate.Test.vstemplate">
       <SubType>Designer</SubType>
     </VSTemplate>
   </ItemGroup>

@@ -113,6 +113,13 @@
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
       <TemplateType>Project</TemplateType>
     </ProjectReference>
+    <ProjectReference Include="..\Scalejs.ProjectTemplate.Test\Scalejs.ProjectTemplate.Test.csproj">
+      <Project>{95982464-60F3-4B99-AC4C-7A3CDF402A2B}</Project>
+      <Name>Scalejs.ProjectTemplate.Test</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\Scalejs.VSPackage\Scalejs.VSPackage.csproj">
       <Project>{a5a47dfc-5ffc-4186-b9cf-53daa0c3d812}</Project>
       <Name>Scalejs.VSPackage</Name>

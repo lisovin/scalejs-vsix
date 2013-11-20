@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>{7D9BBE50-A33C-4A0C-B660-9512BDCC9951}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <OutputPath>build</OutputPath>
+    <OutputPath>js</OutputPath>
     <JSLintSkip>\Scripts\</JSLintSkip>
     <RestorePackages>true</RestorePackages>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
