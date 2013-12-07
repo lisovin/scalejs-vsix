@@ -26,8 +26,8 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="Scalejs..b4161afb-19ab-4b0c-9365-63c80c2677b5">
-      <package id="scalejs" version="0.3.0.0" />
-      <package id="requirejs" version="2.1.8"/>
+      <package id="scalejs" version="0.3.2" />
+      <package id="requirejs" version="2.1.9"/>
       <package id="jasmine-js" version="1.3.1.1" />
     </packages>
   </WizardData>

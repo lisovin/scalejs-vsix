@@ -1,6 +1,11 @@
 var require = {
     "baseUrl":  ".",
-    "paths":  {
+    "config": {
+        "scalejs.statechart-scion": {
+            "logStatesEnteredAndExited": true
+        }
+    },
+    "paths": {
         "jasmine":  "Scripts/jasmine",
         "jasmine-html":  "Scripts/jasmine-html"
     },

@@ -24,15 +24,16 @@
     <Content Include="Scripts\_references.js"/>
     <Content Include="app\app.js"/>
     <Content Include="app\main\bindings\mainBindings.js"/>
+    <Content Include="app\main\styles\main.less"/>
     <Content Include="app\main\viewmodels\mainViewModel.js"/>
     <Content Include="app\main\views\main.html"/>
     <Content Include="app\main\mainModule.js"/>
     <Content Include="test\all.tests.js"/>
     <Content Include="test\mainViewModel.test.js"/>
     <Content Include="config.js"/>
-    <Content Include="css\global.css"/>
     <Content Include="Properties\build.rjs"/>
-	</ItemGroup>
+    <Content Include="Properties\$safeprojectname$.nuspec"/>
+  </ItemGroup>
   <PropertyGroup>
     <ScalejsProjectType>Application</ScalejsProjectType>
   </PropertyGroup>

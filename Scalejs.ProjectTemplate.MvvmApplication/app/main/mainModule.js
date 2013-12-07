@@ -1,14 +1,13 @@
 ﻿/*global define */
 define([
-    'scalejs!sandbox/main',
+    'sandbox!$fileinputname$',
     'app/main/viewmodels/mainViewModel',
-    'text!app/main/views/main.html',
-    'app/main/bindings/mainBindings.js'
+    'views!main',
+    'bindings!main',
+    'styles!main'
 ], function (
     sandbox,
-    mainViewModel,
-    mainTemplate,
-    mainBindings
+    mainViewModel
 ) {
     'use strict';
 
@@ -16,19 +15,11 @@ define([
         var // imports
             root = sandbox.mvvm.root,
             template = sandbox.mvvm.template,
-            registerBindings = sandbox.mvvm.registerBindings,
-            registerTemplates = sandbox.mvvm.registerTemplates,
             registerStates = sandbox.state.registerStates,
             state = sandbox.state.builder.state,
             onEntry = sandbox.state.builder.onEntry,
             // vars
             viewModel = mainViewModel();
-
-        // Register module bindings
-        registerBindings(mainBindings);
-
-        // Register module templates
-        registerTemplates(mainTemplate);
 
         // Register application state for the module.
         registerStates('root',

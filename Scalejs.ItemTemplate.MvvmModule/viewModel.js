@@ -1,6 +1,6 @@
 ﻿/*global define */
 define([
-    'scalejs!sandbox/$fileinputname$'
+    'sandbox!$fileinputname$',
 ], function (
     sandbox
 ) {

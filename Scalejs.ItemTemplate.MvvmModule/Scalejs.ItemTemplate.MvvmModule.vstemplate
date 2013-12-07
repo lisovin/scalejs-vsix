@@ -11,6 +11,7 @@
   </TemplateData>
   <TemplateContent>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\bindings\$fileinputname$Bindings.js">bindings.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\styles\$fileinputname$.less">styles.less</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\viewmodels\$fileinputname$ViewModel.js">viewModel.js</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\views\$fileinputname$.html">view.html</ProjectItem>
     <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$Module.js">module.js</ProjectItem>
