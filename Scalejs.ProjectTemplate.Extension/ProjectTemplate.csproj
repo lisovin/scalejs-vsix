@@ -8,9 +8,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Properties\build.rjs"/>
-    <Content Include="Properties\$projectname$.nuspec"/>
-    <Content Include="$projectname$.js"/>
-    <Content Include="$projectname$\part1.js"/>
+    <Content Include="Properties\$safeprojectname$.nuspec"/>
+    <Content Include="$safeprojectname$.js"/>
+    <Content Include="$safeprojectname$\part1.js"/>
     <Content Include="tools\install.ps1"/>
     <Content Include="tools\uninstall.ps1"/>
     <Content Include="config.js"/>

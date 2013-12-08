@@ -28,6 +28,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <JSLintSkip>\Scripts\</JSLintSkip>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -40,12 +44,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <JSLintSkip>\Scripts\</JSLintSkip>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,13 +74,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="scalejs.extension.nuspec" />
+    <None Include="scalejs.extension.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="ProjectTemplate.csproj">
       <SubType>Designer</SubType>
     </None>
     <None Include="build.rjs" />
-    <None Include="tools\install.ps1" />
-    <None Include="tools\uninstall.ps1" />
+    <None Include="install.ps1" />
+    <None Include="uninstall.ps1" />
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="Scalejs.ProjectTemplate.Extension.vstemplate">
@@ -111,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="scalejs.extension.js" />
-    <None Include="%24projectname%24\part1.js" />
+    <None Include="part1.js" />
     <None Include="config.js" />
   </ItemGroup>
   <ItemGroup>

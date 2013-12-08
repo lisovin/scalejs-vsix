@@ -1,7 +1,6 @@
 /*global define,jasmine*/
 define([
     'jasmine-html',
-    'scalejs!application',
     './$projectname$'
 ], function () {
     'use strict';
