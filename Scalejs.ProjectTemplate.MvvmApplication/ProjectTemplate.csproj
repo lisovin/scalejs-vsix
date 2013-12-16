@@ -32,7 +32,7 @@
     <Content Include="test\mainViewModel.test.js"/>
     <Content Include="config.js"/>
     <Content Include="Properties\build.rjs"/>
-    <Content Include="Properties\$safeprojectname$.nuspec"/>
+    <Content Include="Properties\$projectname$.nuspec"/>
   </ItemGroup>
   <PropertyGroup>
     <ScalejsProjectType>Application</ScalejsProjectType>

@@ -30,7 +30,7 @@
       <ProjectItem ReplaceParameters="true">test\all.tests.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">test\mainViewModel.test.js</ProjectItem>
       <ProjectItem ReplaceParameters="true">Properties\build.rjs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\$safeprojectname$.nuspec">MvvmApplication.nuspec</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\$projectname$.nuspec">MvvmApplication.nuspec</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>

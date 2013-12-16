@@ -16,9 +16,9 @@
   <TemplateContent>
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\build.rjs">build.rjs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\$safeprojectname$.nuspec">scalejs.extension.nuspec</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.js">scalejs.extension.js</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$\part1.js">part1.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\$projectname$.nuspec">scalejs.extension.nuspec</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.js">scalejs.extension.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$\part1.js">part1.js</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="tools\install.ps1">install.ps1</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="tools\uninstall.ps1">uninstall.ps1</ProjectItem>
       <ProjectItem ReplaceParameters="true">config.js</ProjectItem>

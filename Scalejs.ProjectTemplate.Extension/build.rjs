@@ -1,6 +1,6 @@
 ﻿({
 	mainConfigFile: '../config.js',
-    include: '$safeprojectname$',
+    include: '$projectname$',
     exclude: [
         'scalejs!core'
     ]

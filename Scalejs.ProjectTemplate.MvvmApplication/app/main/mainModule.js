@@ -1,6 +1,6 @@
 ﻿/*global define */
 define([
-    'sandbox!$fileinputname$',
+    'sandbox!main',
     'app/main/viewmodels/mainViewModel',
     'views!main',
     'bindings!main',
