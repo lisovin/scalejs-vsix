@@ -120,14 +120,14 @@
     <ProjectReference Include="..\Scalejs.ItemTemplate.MvvmModule.Css\Scalejs.ItemTemplate.MvvmModule.Css.csproj">
       <Project>{1D00823B-90D2-4932-A0A0-29E6CFC18728}</Project>
       <Name>Scalejs.ItemTemplate.MvvmModule.Css</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
     <ProjectReference Include="..\Scalejs.ItemTemplate.MvvmModule.Less\Scalejs.ItemTemplate.MvvmModule.Less.csproj">
       <Project>{7BA17364-2D8A-4E6F-98FA-A22FCB66AE9B}</Project>
       <Name>Scalejs.ItemTemplate.MvvmModule.Less</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>

@@ -21,7 +21,7 @@
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Scalejs.ProjectTemplate.Test" d:TargetPath="|Scalejs.ProjectTemplate.Test;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Scalejs.ProjectTemplate.MvvmApplication.Less" d:TargetPath="|Scalejs.ProjectTemplate.MvvmApplication.Less;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Scalejs.ProjectTemplate.MvvmApplication.Css" d:TargetPath="|Scalejs.ProjectTemplate.MvvmApplication.Css;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Scalejs.ItemTemplate.MvvmModule.Css" d:TargetPath="|Scalejs.ItemTemplate.MvvmModule.Css;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Scalejs.ItemTemplate.MvvmModule.Less" d:TargetPath="|Scalejs.ItemTemplate.MvvmModule.Less;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Scalejs.ItemTemplate.MvvmModule.Css" d:TargetPath="|Scalejs.ItemTemplate.MvvmModule.Css;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Scalejs.ItemTemplate.MvvmModule.Less" d:TargetPath="|Scalejs.ItemTemplate.MvvmModule.Less;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
   </Assets>
 </PackageManifest>
