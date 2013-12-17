@@ -109,15 +109,25 @@
     <Content Include="packages\scalejs.styles-less.0.1.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="packages\scalejs.styles-css.0.1.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Scalejs.ItemTemplate.MvvmModule\Scalejs.ItemTemplate.MvvmModule.csproj">
+    <ProjectReference Include="..\Scalejs.ItemTemplate.MvvmModule.Css\Scalejs.ItemTemplate.MvvmModule.Css.csproj">
       <Project>{1D00823B-90D2-4932-A0A0-29E6CFC18728}</Project>
-      <Name>Scalejs.ItemTemplate.MvvmModule</Name>
-      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <Name>Scalejs.ItemTemplate.MvvmModule.Css</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\Scalejs.ItemTemplate.MvvmModule.Less\Scalejs.ItemTemplate.MvvmModule.Less.csproj">
+      <Project>{7BA17364-2D8A-4E6F-98FA-A22FCB66AE9B}</Project>
+      <Name>Scalejs.ItemTemplate.MvvmModule.Less</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
@@ -128,13 +138,19 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
-    <ProjectReference Include="..\Scalejs.ProjectTemplate.MvvmApplication\Scalejs.ProjectTemplate.MvvmApplication.csproj">
-      <Project>{D807A884-E479-4531-A637-FA84AC2827E1}</Project>
-      <Name>Scalejs.ProjectTemplate.MvvmApplication</Name>
+    <ProjectReference Include="..\Scalejs.ProjectTemplate.MvvmApplication.Css\Scalejs.ProjectTemplate.MvvmApplication.Css.csproj">
+      <Project>{C49AC71A-0B95-4714-989B-586398ADFF78}</Project>
+      <Name>Scalejs.ProjectTemplate.MvvmApplication.Css</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-      <TemplateType>Project</TemplateType>
+    </ProjectReference>
+    <ProjectReference Include="..\Scalejs.ProjectTemplate.MvvmApplication.Less\Scalejs.ProjectTemplate.MvvmApplication.Less.csproj">
+      <Project>{D807A884-E479-4531-A637-FA84AC2827E1}</Project>
+      <Name>Scalejs.ProjectTemplate.MvvmApplication.Less</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
     <ProjectReference Include="..\Scalejs.ProjectTemplate.Test\Scalejs.ProjectTemplate.Test.csproj">
       <Project>{95982464-60F3-4B99-AC4C-7A3CDF402A2B}</Project>

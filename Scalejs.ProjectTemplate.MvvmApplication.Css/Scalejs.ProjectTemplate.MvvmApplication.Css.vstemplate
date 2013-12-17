@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Scalejs MVVM Application (CSS)</Name>
+    <Description>Scalable JavaScript MVVM Application with CSS support</Description>
+    <Icon>Scalejs.ProjectTemplate.MvvmApplication.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>b7057446-4151-4d1e-82ca-df110bcadbca</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MyScalejsApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true">README.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.debug.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.release.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">index.test.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">app\app.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">app\main\bindings\mainBindings.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">app\main\styles\main.css</ProjectItem>
+      <ProjectItem ReplaceParameters="true">app\main\viewmodels\mainViewModel.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">app\main\views\main.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true">app\main\mainModule.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">config.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Scripts\_references.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">test\all.tests.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">test\mainViewModel.test.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Properties\build.rjs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\$projectname$.nuspec">MvvmApplication.nuspec</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="Scalejs..b4161afb-19ab-4b0c-9365-63c80c2677b5">
+      <package id="scalejs" version="0.3.3" />
+      <package id="scalejs.mvvm" version="0.3.4.4" />
+      <package id="scalejs.functional" version="0.2.9.8" />
+      <package id="scalejs.statechart-scion" version="0.3.0.0" />
+      <package id="scalejs.linq-linqjs" version="3.0.3.1" />
+      <package id="scalejs.styles-css" version="0.1.0" />
+      <package id="knockoutjs" version="3.0.0"/>
+      <package id="Knockout.Mapping" version="2.4.0"/>
+      <package id="jasmine-js" version="1.3.1.1"/>
+      <package id="almond" version="0.2.6"/>
+      <package id="requirejs" version="2.1.9"/>
+    </packages>
+  </WizardData>
+</VSTemplate>

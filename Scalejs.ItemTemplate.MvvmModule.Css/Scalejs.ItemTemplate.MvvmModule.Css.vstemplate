@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Scalejs MVVM Module (CSS)</Name>
+    <DefaultName>module</DefaultName>
+    <Description>Scalable JavaScript application MVVM module with CSS support</Description>
+    <Icon>Scalejs.ItemTemplate.MvvmModule.ico</Icon>
+    <TemplateID>42a74824-f706-4d91-9655-4e1e0e273431</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\bindings\$fileinputname$Bindings.js">bindings.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\styles\$fileinputname$.css">styles.css</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\viewmodels\$fileinputname$ViewModel.js">viewModel.js</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\views\$fileinputname$.html">view.html</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$fileinputname$\$fileinputname$Module.js">module.js</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
